@@ -1,46 +1,14 @@
-# Getting Started with Create React App
+# Пример приложения для A/B тестирования (Split testing) с помощью Google Optimize
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Demo: https://google-optimize-a-b-test.vercel.app/ (необходимо зайти с разных устройств / браузеров)
 
-## Available Scripts
+Данный тест реализован средствами [Google Optimize](https://optimize.google.com/) и Гугл аналитики (Обязательно старая версия, 4 в данный момент не поддерживается оптимизациями)
 
-In the project directory, you can run:
+### Преимущества метода:
+- Можно настроить цели
+- "Варианты" настраиваются непосредственно через Optimize с помощью расширения для Хрома (можно поменять текст, HTML, вставить какой-нибудь JS код)
+- Там же можно посмотреть аналитику / статистику по настроенным целям
+- Настраивается распределение трафика, вес и т.д, можно пока
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Минусы:
+- ~~В рамках реакта или другого SPA фреймворка / библиотеки нет возможности полностью подменить компонент~~ [Вроде как таки можно редактировать и без расширения для хрома](https://medium.com/broadlume-product/how-to-add-google-optimize-a-b-testing-to-your-react-app-in-10-lines-of-code-8310b58e51f4)
